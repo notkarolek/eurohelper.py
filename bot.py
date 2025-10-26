@@ -99,6 +99,8 @@ async def mobile(ctx):
         )
     )
     await ctx.send(embed=embed)
+    
+    
 @bot.command()
 async def launcher(ctx):
   embed = Discord.embed(
@@ -140,6 +142,7 @@ tutorial_text = """🎮 **How to Set Up the Launcher for the First Time** 🎮
 """
       )
     )
+    await ctx.send(embed=embed)
 # --------------------
 # Run Bot
 # --------------------
