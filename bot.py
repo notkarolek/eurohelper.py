@@ -99,13 +99,15 @@ async def mobile(ctx):
         )
     )
     await ctx.send(embed=embed)
-    
-    
+
+# --------------------
+# Launcher Setup Command
+# --------------------
 @bot.command()
 async def launcher(ctx):
-  embed = discord.Embed(
-    description=(
-    """🎮 **How to Set Up the Launcher for the First Time** 🎮
+    embed = discord.Embed(
+        description=(
+            """🎮 **How to Set Up the Launcher for the First Time** 🎮
 
 [Website](https://europa-mobile.netlify.app/downloadfiles)
 
@@ -140,9 +142,10 @@ async def launcher(ctx):
 
 ✨ **Enjoy!**
 """
-      )
+        )
     )
     await ctx.send(embed=embed)
+
 # --------------------
 # Run Bot
 # --------------------
