@@ -103,7 +103,7 @@ async def mobile(ctx):
     
 @bot.command()
 async def launcher(ctx):
-  embed = Discord.embed(
+  embed = discord.Embed(
     description=(
     """🎮 **How to Set Up the Launcher for the First Time** 🎮
 
