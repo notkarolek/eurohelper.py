@@ -105,9 +105,9 @@ async def mobile(ctx):
 async def launcher(ctx):
   embed = Discord.embed(
     description=(
-tutorial_text = """🎮 **How to Set Up the Launcher for the First Time** 🎮
+    """🎮 **How to Set Up the Launcher for the First Time** 🎮
 
-**Website:** https://europa-mobile.netlify.app/downloadfiles ⏪
+[Website](https://europa-mobile.netlify.app/downloadfiles)
 
 1️⃣ **Download the Launcher APK**  
    - Download the launcher APK from the website and install it onto your device.
