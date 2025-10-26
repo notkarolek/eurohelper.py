@@ -30,7 +30,7 @@ threading.Thread(target=run_web, daemon=True).start()
 # --------------------
 intents = discord.Intents.default()
 intents.message_content = True
-bot = commands.Bot(command_prefix='.', intents=intents)
+bot = commands.Bot(command_prefix='.', '/' intents=intents)
 
 # --------------------
 # Bot Ready Event
@@ -99,7 +99,47 @@ async def mobile(ctx):
         )
     )
     await ctx.send(embed=embed)
+@bot.command()
+async def launcher(ctx):
+  embed = Discord.embed(
+    description=(
+tutorial_text = """🎮 **How to Set Up the Launcher for the First Time** 🎮
 
+**Website:** https://europa-mobile.netlify.app/downloadfiles ⏪
+
+1️⃣ **Download the Launcher APK**  
+   - Download the launcher APK from the website and install it onto your device.
+
+2️⃣ **Install the APK**  
+   - Follow your device’s prompts to complete the installation.
+
+3️⃣ **Download Game Files**  
+   - On the same website, click **Download Game Files**.
+
+4️⃣ **Open the Launcher**  
+   - Enter the launcher, wait for it to load, then click **Play**.  
+   - Set your preferences in the **Settings**.
+
+5️⃣ **Extract the Game Data**  
+   - Open **ZArchiver** or your preferred file explorer.  
+   - Navigate to the folder where the game data ZIP files are downloaded (e.g., etc.zip, pvr.zip, dxt.zip) and open the ZIP.
+
+6️⃣ **Copy the Files**  
+   - Enable **Selection Mode** and select all files.  
+   - Hold and choose **Copy**.
+
+7️⃣ **Paste into Launcher Folder**  
+   - Navigate to the launcher data folder:  
+     `Android/data/com.arizona.game/files`  
+   - Paste the copied files and wait until the process finishes.
+
+8️⃣ **Join the Server**  
+   - Open the launcher again, click **Play**, and enjoy the game! 🚀
+
+✨ **Enjoy!**
+"""
+      )
+    )
 # --------------------
 # Run Bot
 # --------------------
